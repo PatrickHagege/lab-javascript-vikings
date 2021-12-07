@@ -82,7 +82,7 @@ class War {
     let saxonAttacker = this.saxonArmy[saxTos];
     let vikTos = Math.floor(Math.random() * this.vikingArmy.length);
     let vikVictim = this.vikingArmy[vikTos];
-    //why not re assign the result of saxonVictim.receiveDamage to saxonVictim ?
+    //why not re assign the result of vikVictim.receiveDamage to vikVictim ?
     let strickenViking = vikVictim.receiveDamage(saxonAttacker.strength);
     if (strickenViking.health <= 0) this.vikingArmy.splice(vikTos, 1);
     return strickenViking;
